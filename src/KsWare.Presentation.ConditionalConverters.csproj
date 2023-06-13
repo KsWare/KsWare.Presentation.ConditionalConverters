@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<RootNamespace>KsWare.Presentation</RootNamespace>
+		<Title>KsWare.Presentation.ConditionalConverters</Title>
+		<Company>KsWare</Company>
+		<Authors>KsWare</Authors>
+		<Description>Conditional converters for WPF.</Description>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<VersionPrefix>0.1.0</VersionPrefix>
+		<AssemblyVersion>$(VersionPrefix).0</AssemblyVersion>
+		<FileVersion>$(VersionPrefix).0</FileVersion>
+		<PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Copyright>Copyright © 2002-2023 KsWare. All rights reserved.</Copyright>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="FileName.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="KsWare.Presentation.ConditionalConverters.csproj.DotSettings" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\icon.png" Link="Properties\icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README.md" Link="Properties\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>
